@@ -1,22 +1,26 @@
-//2.Assign and print the roll number, phone number and address of two students having names "Sam" and "John" respectively by creating two objects of class 'Student'
+/*Write a program to print the names of students by creating a Student class. 
+If no name is passed while creating an object of the Student class, then the name should be "Unknown", 
+otherwise the name should be equal to the String value passed while creating the object of the Student class. */
 
+class student{
+     String s;
+    String name;
+  public student(String s){
+      name = s;
+  }
+  public student()
+  {
+      name = "unknown";
+  }
+}
+public class student1{
+    public static void main(String[] args) {
+        
+        student obj = new student();
+        obj.s = "Vishi";
+        
+        System.out.println(obj.s);
+        System.out.println(obj.name);
 
-class Student1
-{
-    int  rollno_of_Sam=54;
-    int rollno_of_john=65;
-    long phoneno_of_Sam=9421357924L;
-    long phoneno_of_john=9146585914L;
-    String adrress_of_sam="latur", addrress_of_john="pune";
-   public static void main(String[] args)
-    {
-       Student1 s1=new Student1();
-       Student1 s2=new Student1();
-       System.out.println("Roll Number of the Sam::"+s1.rollno_of_Sam);
-       System.out.println("Roll Number of the John::"+s2.rollno_of_john);
-       System.out.println("Phone Number of the sam::"+s1.phoneno_of_Sam);
-       System.out.println("Phone Number of the John::"+s2.phoneno_of_john);
-       System.out.println("Address of sam::"+s1.adrress_of_sam);
-       System.out.println("Address of john::"+s2.addrress_of_john);
     }
 }
